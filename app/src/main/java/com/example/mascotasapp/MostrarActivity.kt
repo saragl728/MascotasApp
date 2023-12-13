@@ -35,7 +35,7 @@ class MostrarActivity : ActividadConMenus() {
         var gatos = 0
         //tengo que hacer que llame al método que busca el número de gatos del propietario
         CoroutineScope(Dispatchers.IO).launch {
-            gatos = com.example.mascotasapp.database.Dao.gatosDePropietarios(duenio)
+            gatos = Dao.gatosDePropietarios(duenio)
         }
         return gatos
     }
@@ -44,7 +44,7 @@ class MostrarActivity : ActividadConMenus() {
         var perros = 0
         //tengo que llamar al método que busca el número de perros del propietario
         CoroutineScope(Dispatchers.IO).launch {
-            perros = com.example.mascotasapp.database.Dao.perrosDePropietarios(duenio)
+            perros = Dao.perrosDePropietarios(duenio)
         }
         return perros
     }
