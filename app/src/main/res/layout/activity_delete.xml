@@ -9,15 +9,15 @@
 
     <EditText
         android:id="@+id/escribePropietario"
-        android:layout_width="328dp"
-        android:layout_height="47dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="72dp"
         android:layout_marginTop="300dp"
         android:layout_marginEnd="72dp"
         android:ems="10"
         android:hint="Nombre de un propietario"
         android:inputType="text"
-        android:textSize="24sp"
+        android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.606"
         app:layout_constraintStart_toStartOf="parent"
