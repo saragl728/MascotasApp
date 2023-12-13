@@ -16,8 +16,11 @@ interface Dao {
     @Insert
     fun insertarPropietario(propietarios: Propietarios)
 
+    @Query("SELECT * FROM mascotas WHERE duenio LIKE :propietario")
+    fun buscarMascotasPropietarios(propietario: String) : Mascotas
+
     @Delete
-    fun borrarMascotaDePropietario(propietarios: Propietarios)
+    fun borrarMascotaDePropietario(mascotas: Mascotas)
 
     @Update
     fun actualizarPropietario(propietarios: Propietarios)
