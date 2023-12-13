@@ -5,7 +5,7 @@ import android.os.Bundle
 import com.example.mascotasapp.databinding.ActivityUpdateBinding
 
 
-class UpdateActivity : AppCompatActivity() {
+class UpdateActivity : ActividadConMenus() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         var binding = ActivityUpdateBinding.inflate(layoutInflater)

@@ -5,7 +5,7 @@ import android.os.Bundle
 import com.example.mascotasapp.databinding.ActivityDeleteBinding
 
 
-class DeleteActivity : AppCompatActivity() {
+class DeleteActivity : ActividadConMenus() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         var binding = ActivityDeleteBinding.inflate(layoutInflater)

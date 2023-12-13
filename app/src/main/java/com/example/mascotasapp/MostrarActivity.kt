@@ -5,7 +5,7 @@ import android.os.Bundle
 import com.example.mascotasapp.databinding.ActivityMostrarBinding
 
 
-class MostrarActivity : AppCompatActivity() {
+class MostrarActivity : ActividadConMenus() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         var binding = ActivityMostrarBinding.inflate(layoutInflater)
