@@ -32,18 +32,20 @@ class MostrarActivity : ActividadConMenus() {
 
     }
     fun buscarGatos(duenio: String) : Int {
+        var gatos = 0
         //tengo que hacer que llame al método que busca el número de gatos del propietario
         CoroutineScope(Dispatchers.IO).launch {
-
+            gatos = com.example.mascotasapp.database.Dao.gatosDePropietarios(duenio)
         }
-        return 0
+        return gatos
     }
 
     fun buscarPerros(duenio: String) : Int {
+        var perros = 0
         //tengo que llamar al método que busca el número de perros del propietario
         CoroutineScope(Dispatchers.IO).launch {
-
+            perros = com.example.mascotasapp.database.Dao.perrosDePropietarios(duenio)
         }
-        return 0
+        return perros
     }
 }
