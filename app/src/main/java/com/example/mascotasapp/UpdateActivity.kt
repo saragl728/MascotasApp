@@ -1,6 +1,5 @@
 package com.example.mascotasapp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.mascotasapp.databinding.ActivityUpdateBinding
 
@@ -10,5 +9,9 @@ class UpdateActivity : ActividadConMenus() {
         super.onCreate(savedInstanceState)
         var binding = ActivityUpdateBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.btnActualizar.setOnClickListener {
+            //tengo que cambiar la dirección del propietario
+        }
     }
 }
